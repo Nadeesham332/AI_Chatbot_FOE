@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom";
 
 import BotMessage from "./components/BotMessage";
 import UserMessage from "./components/UserMessage";
@@ -48,5 +48,8 @@ function Chatbot() {
     );
 }
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Chatbot />);
+
+ReactDOM.render(
+      <Chatbot />, 
+    document.getElementById('root')
+  );
